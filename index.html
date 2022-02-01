@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Reposteria y cafeteria El cielo - Desde 1978">
+    <meta name="keywords"
+        content="Reposteria, Cafeteria, Panaderia, Biscocheria, Pasteles, Cafe, Pan, Bizcochos, Cupcakes, Galletas, Tartas, Macarrones y mas">
+    <meta name="author" content="Matias Ozuna">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a la Reposteria y Cafeteria El Cielo - Desde 1978</title>
+    <Link rel="stylesheet" href="css/estilos.css">
+    <Link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@500&display=swap">
+</head>
+
+<body>
+    <header>
+        <nav id="nav_sup">
+            <div class="logo_encabezado"><img src="img/logo_letras_y_laterales.png" alt="Logotipo encabezado"></div>
+            <a href="#" class="activo"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#conocenos"><i class="fas fa-users"></i> Conócenos</a>
+            <a href="#productos_servicios"><i class="fas fa-concierge-bell"></i> Productos</a>
+            <a href="#contactanos"><i class="fas fa-phone-alt"></i> Contáctanos</a>
+            <form action="acceder_admin.php" id="forma_nav_sup">
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">
+                <input type="button" value="Acceder" class="boton_formulario">
+            </form>
+        </nav>
+
+        <div id="div_hero">
+            <div id="div_hero_interior">
+                <img src="img/logo.svg" alt="aqui va el logo de la empresa">
+                <!-- <h1>El Cielo - Desde 1978</h1> -->
+                <h1>¡Donde el Mejor Café y la Reposteria Fina se encuentran!</h1><br>
+                <i class="fas fa-arrow-circle-down fa-3x flecha_abajo_hero"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="conocenos">
+            <p class="fuente_logo titulo_color">El Cielo</p>
+            <p class="contenedor_50_por_ciento">Somos una Reposteria y Cafeteria que cuenta con una pasion por los
+                mejores ingredientes y sabores desde 1978</p>
+        </div>
+        <div id="productos_servicios">
+            <h2>Te Invitamos a Probar Nuestras Especialidades</h2>
+            <div class="bloque_producto">
+                <p>Café</p>
+                <img src="img/cafe_1280x853.jpg" alt="">
+                <div class="capa_superior">
+                    <div id="productos_cafe" class="info_producto">La mas amplia variedad de cafes de toda Sudamerica</div>
+                </div>
+            </div>
+            <div class="bloque_producto">
+                <p>Repostería </p>
+                <img src="img/reposteria_macarrones_5472x3648.jpeg" alt="">
+                <div class="capa_superior">
+                    <div id="productos_reposteria" class="info_producto">La mas fina y delicada cocina de reposteria</div>
+                </div>
+            </div>
+            <div class="bloque_producto">
+                <p>Cupcakes</p>
+                <img src="img/cupcakes_varios_6000x4000.jpeg" alt="">
+                <div class="capa_superior">
+                    <div id="productos_cupcakes" class="info_producto">Sabores, colores y texturas unicas diferencias nuestros deliciosos Cupcakes </div>
+                </div>
+            </div>
+            <div class="bloque_producto">
+                <p>Pan</p>
+                <img src="img/pan_baguettes_5760x3840.jpeg" alt="">
+                <div class="capa_superior">
+                    <div id="productos_pan" class="info_producto">Amplia variedad de panes crocantes recien horneados</div>
+                </div>
+            </div>
+            <div class="bloque_producto">
+                <p>Galletas</p>
+                <img src="img/galletas_choco_arandano_6000x4000.jpeg" alt="">
+                <div class="capa_superior">
+                    <div id="productos_galletas" class="info_producto">Galletas de todas las formas y colores que te puedas imaginar</div>
+                </div>
+            </div>
+            <div class="bloque_producto">
+                <p>Pastel</p>
+                <img src="img/pastel_moca_nueces.jpg" alt="">
+                <div class="capa_superior">
+                    <div id="productos_pastel" class="info_producto">Contamos con sabores unicos de pasteles, no te vas a arrepentir de probarlos</div>
+                </div>
+            </div>
+        </div>
+        <div id="instar_actuar">
+            <p class="fuente_logo titulo_color">¡Ordena ahora!</p>
+            <p class="contenedor_50_por_ciento">Si ordenas y mencionas que viste nuestros productos en el sitio web, te
+                daremos un <span class="texto_50_px">50%</span> de descuento en tu primera compra</p>
+        </div>
+        <div id="contactanos">
+            <form action="procesa_formulario_contacto.php" method="GET">
+                <fieldset>
+                    <legend>Para contactarnos por favor llena los siguientes campos</legend>
+                    <div class="fila">
+                        <div class="etiquetas_25pcnto">
+                            <label for="nombre">Nombre(s):</label>
+                        </div>
+                        <div class="campos_75pcnto">
+                            <input type="text" name="nombre" id="nombre" placeholder="Por favor escribe tu nombre(s)">
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="etiquetas_25pcnto">
+                            <label for="apellido">Apellido(s):</label>
+                        </div>
+                        <div class="campos_75pcnto">
+                            <input type="text" name="apellido" id="apellido"
+                                placeholder="Por favor escribe tu apellido(s)">
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="etiquetas_25pcnto">
+                            <label for="motivo">Motivo:</label>
+                        </div>
+                        <div class="campos_75pcnto">
+                            <select name="motivo" id="motivo">
+                                <option value="pedido">Pedido</option>
+                                <option value="pregunta">Pregunta</option>
+                                <option value="queja">Queja</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="etiquetas_25pcnto">
+                            <label for="mensaje">Mensaje:</label>
+                        </div>
+                        <div class="campos_75pcnto">
+                            <textarea name="mensaje" id="mensaje" placeholder="Por favor escribe tu mensaje"
+                                rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <input type="submit" value="Enviar Informacion">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="fila_texto_cierre">
+            <p>Panal de miel son las palabras amables: endulzan la vida y dan salud al cuerpo</p>
+        </div>
+        <div id="fila_bloques_pie_pagina">
+            <div id="menu_inferior" class="columna_pie">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#conocenos">Conócenos</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contactanos">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div id="direccion" class="columna_pie">
+                <address>
+                    Avda. Cafetales <br>
+                    Numero 1876, barrio Centro <br>
+                    Asuncion, Paraguay <br>
+                    telefono: 0981 225578
+                </address>
+            </div>
+            <div id="pasion" class="columna_pie">
+                <div>
+                    <p>En el "Cielo" más que una Misión y Visión, nuestra pasion es hacer los postres y el cafe mas
+                        deliciosos con los mejores ingredientes que provoquen increibles sensaciones de sabor en tu
+                        paladar y te hagan volver por mas</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="fila_derechos_autor">
+            <copyright>Todos los Derechos reservados <i class="fas fa-copyright"></i> El cielo 2020 </copyright>
+            <author> Sitio Desarrollado por <a href="https://maobdesing.com" target="blank">MAOB desing</a> </author>
+        </div>
+    </footer>
+
+    <!-- CONTENIDO ANCLADO EN EL LATERAL DE LA PAGINA -->
+    <div class="contenedor_barra_social_anclada">
+        <ul class="lista_anclada">
+            <li id="icono_facebook">
+                <p><a href="#" target="_blank"></a><i class="fab fa-facebook-square fa-3x color_facebook"></i>Danos un
+                    Like en <br> Facebook</p>
+            </li>
+            <li id="icono_instagram">
+                <p><a href="#" target="_blank"></a><i class="fab fa-instagram fa-3x color_instagram"></i>Siguenos en
+                    <br> Instagram</p>
+            </li>
+            <li id="icono_twitter">
+                <p><a href="#" target="_blank"></a><i class="fab fa-twitter-square fa-3x color_twitter"></i>Siguenos en
+                    <br> Twitter</p>
+            </li>
+            <li id="icono_youtube">
+                <p><a href="#" target="_blank"></a><i class="fab fa-youtube fa-3x color_youtube"></i>Suscríbete en <br>
+                    Youtube</p>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

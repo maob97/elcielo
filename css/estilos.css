@@ -1,0 +1,1175 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+}
+
+/** INICIA SECCION DE REGLAS CSS PARA LA BARRA DE NAVEGACION */
+
+#nav_sup{
+    width: 100%;
+    /* background-color: #281813; */
+    background-color: rgba(40, 24, 19, 0.8);
+    overflow: auto;
+    position: fixed;
+    box-shadow: 0 0 25px 0 black;
+    z-index: 400;
+
+}
+
+#nav_sup a {
+    float: left;
+    color: #FFF5E9;
+    font-size: 13px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#nav_sup a:hover{
+    background-color: #FFF5E9;
+    color: #281813;
+}
+
+#nav_sup a.activo{
+    background-color: #DC761D;
+}
+
+.logo_encabezado img{
+    width: 120px;
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#forma_nav_sup{
+    width: 28%;
+    float: right;
+    padding: 6px;
+    border: none;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#usuario, #contrasenia{
+    width: 20%;
+    height: 10px;
+    padding: 12px;
+    border: 1px solid rgb(40, 24, 19);
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Courgette', cursive;
+    transition: width 0.5s;
+}
+
+#usuario:focus, #contrasenia:focus{
+    width: 40%;
+    outline: none;
+
+}
+
+.boton_formulario{
+    width: 17%;
+    background-color: #FFF5E9;
+    color: rgb(40, 24, 19);
+    border: 1px solid rgb(240, 198, 142);
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.boton_formulario:hover{
+    background-color: rgb(40, 24, 19);
+    border: 1px solid #DC761D;
+    color: #FFF5E9;
+    cursor: pointer;
+}
+
+.boton_formulario:active{
+    background-color: rgb(39, 22, 13);
+    border: 1px solid rgb(155, 121, 76);
+    color: white;
+}
+
+/* TERMINA SECCION DE REGLAS CSS PARA LA BARRA DE NAVEGACION */
+
+
+/** INICIA SECCION DE REGLAS CSS PARA LA BARRA DE REDES ANCLADA Y FLOTANTE */
+
+.contenedor_barra_social_anclada{
+    width: 210px;
+    top: 35%;
+    right: -132px;
+    position: fixed;
+    padding: 0;
+    margin: 0px;
+    z-index: 500;
+}
+
+.lista_anclada li{
+    list-style-type: none;
+
+    color: #efefef;
+    height: 45px;
+    padding: 0px;
+    cursor: pointer;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    margin: 0px 0px 1px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 0 #FFF5E9;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.lista_anclada li:hover{
+    margin-left: -105px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.lista_anclada li p{
+    padding-top: 5px;
+    margin: 0;
+    line-height: 16px;
+    font-size: 11px;
+}
+
+.lista_anclada li i{
+    float: left;
+    margin: 0px 5px 0px 4px;
+}
+
+.lista_anclada li p a{
+    text-decoration: none;
+    color: #2b2929;
+}
+
+.lista_anclada #icono_facebook:hover{
+    box-shadow: 0 0 10px 0 #3b5998;
+}
+
+.lista_anclada #icono_instagram:hover{
+    box-shadow: 0 0 10px 0 #C32AA3;
+}
+
+.lista_anclada #icono_twitter:hover{
+    box-shadow: 0 0 10px 0 #1DA1F2;
+}
+
+.lista_anclada #icono_youtube:hover{
+    box-shadow: 0 0 10px 0 #FF0000;
+}
+
+
+/* TERMINA SECCION DE REGLAS CSS PARA LA BARRA DE REDES ANCLADA Y FLOTANTE */
+
+
+/** INICIA SECCION DE REGLAS PARA EL BLOQUE "HERO" */
+
+#div_hero{
+
+    /* reglas relacionadas con las dimensiones del fondo */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Reglas relacionadas a la imagen de fondo 
+    la linea de abajo nos muestra como podemos oscurecer un poco el bg para que destaquen los titulos */
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/cafe_y_reposteria_5616x3744.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Reglas con tecnologia FLEX (FLEXBOX) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Reglas para la estilizacion de textos */
+    text-align: center;
+    color: #FFF5E9;
+
+}
+
+#div_hero #div_hero_interior img{
+    width: 25vw;
+}
+
+#div_hero #div_hero_interior h1{
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    font-size: 2.8vw;
+}
+
+@keyframes flecha_abajo{
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+    transform: translateY(40px);
+    opacity: 0;
+    }
+}
+.flecha_abajo_hero{
+    animation: flecha_abajo 1.5s infinite forwards ease-in-out;
+}
+
+
+/* TERMINA SECCION DE REGLAS PARA EL BLOQUE "HERO" */
+
+/** INICIA SECCION DE REGLAS PARA EL BLOQUE CONOCENOS E INSTAR A ACTUAR (CALL TO ACTION) */
+
+#conocenos, #instar_actuar{
+    
+    width: 100vw;
+    height: 80vh;
+
+    
+    background-image: linear-gradient(rgba(211, 161, 87, 0.8), rgba(211, 161, 87, 0.8)), url('../img/textura_entrelazada_1.png');
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 26px;
+    color: #281813;
+    
+    
+}
+.fuente_logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-bottom: -5px;
+}
+
+#instar_actuar_titulo{
+    color:#DC761D;
+}
+
+/* TERMINA SECCION DE REGLAS PARA EL BLOQUE CONOCENOS E INSTAR A ACTUAR (CALL TO ACTION) */
+
+/**INICIA SECCION DE REGLAS PARA EL BLOQUE DE PRODUCTOS O SERVICIOS  */
+
+#productos_servicios{
+    width: 100vw;
+    height: 140vh;
+
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/fondo_madera_3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    float: left;
+
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: #FFF5E9;
+    
+}
+#productos_servicios h2{
+    font-size: 2.4vw;
+    font-weight: 300;
+    padding-top: 30px;
+
+}
+
+#productos_servicios .bloque_producto{
+   float: left;
+   width: 33vw;
+   padding: 5%;
+   margin-top: -50px;
+}
+.bloque_producto{
+    position: relative;
+    width: 100%;
+}
+.bloque_producto> *{
+    cursor: pointer;
+}
+
+.bloque_producto:hover img{
+    opacity: 0.3;
+}
+
+.bloque_producto:hover .capa_superior{
+    opacity: 1;
+}
+
+.capa_superior{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease-in;
+    transform: translate(-50%, -30%);
+}
+
+.info_producto{
+    font-size: 20px;
+    padding: 16px 32px;
+    border: 2px solid;
+    border-radius: 7px;
+    color: white;
+}
+
+#productos_cafe{
+    background-color: rgb(39, 22, 13);
+    border-color:rgb(133, 50, 12) ;
+}
+
+#productos_reposteria{
+    background-color: rgb(39, 22, 13);
+    border-color:rgb(133, 50, 12) ;
+}
+
+#productos_cupcakes{
+    background-color: rgb(39, 22, 13);
+    border-color:rgb(133, 50, 12) ;
+}
+
+#productos_pan{
+    background-color: rgb(39, 22, 13);
+    border-color:rgb(133, 50, 12) ;
+}
+
+#productos_galletas{
+    background-color: rgb(39, 22, 13);
+    border-color:rgb(133, 50, 12) ;
+}
+
+#productos_pastel{
+    background-color: rgb(39, 22, 13);
+    border-color:rgb(133, 50, 12) ;
+}
+
+
+
+
+.bloque_producto img{
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease-in;
+}
+
+#productos_servicios p{
+    font-size: 20px;
+
+}
+#productos_servicios img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 0 black;
+}
+
+/*TERMINA SECCION DE REGLAS PARA EL BLOQUE DE PRODUCTOS O SERVICIOS  */
+
+
+/** INICIO SECCION DE REGLAS PARA EL BLOQUE DE CONTACTANOS */
+
+#contactanos{
+    width: 100vw;
+    height: 130vh;
+
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/cafetera_barista_5000x3333.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courgette', cursive;
+    color: #FFF5E9;
+    
+    
+}
+
+form{
+    width: 80%;
+    border: 2px solid #DC761D;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+fieldset{
+    border: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+legend{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label{
+    padding: 12px;
+    display: inline-block;
+}
+
+.etiquetas_25pcnto{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.campos_75pcnto{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+
+input[type="text"], select, textarea{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid rgb(40, 24, 19,);
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Courgette', cursive;
+
+}
+
+input[type="text"]:focus, select:focus, textarea:focus, input[type="password"]:focus {
+    border: 1px solid #DC761D;
+    background-color: #ffe2be;
+    outline: none;
+
+}
+
+input[type="submit"]{
+    background-color: rgb(40, 24, 19);
+    color: #FFF5E9;
+    padding: 14px;
+    border: 1px solid #DC761D;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 1s;
+
+}
+
+input[type=submit]:hover{
+    background-color: #FFF5E9;
+    color: rgb(40, 24, 19);
+}
+
+
+/*TERMINA SECCION DE REGLAS PARA EL BLOQUE DE CONTACTANOS */
+
+/**INICIA SECCION DE REGLAS PARA EL BLOQUE DE PIE DE PAGINA */
+
+footer{
+    width: 100vw;
+    height: 50vh;
+
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/cafetera_barista_5000x3333.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    float: left;
+
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: #FFF5E9;
+}
+
+#fila_texto_cierre{
+    float: left;
+    width: 100vw;
+    background-image:linear-gradient( rgba(212, 122, 50, 0.9),  rgba(212, 122, 50, 0.9)), url('../img/textura_entrelazada_2.png');
+    /* background-color: #D47A32; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+    text-align: center;
+    color: #FFF5E9;
+}
+.columna_pie{
+    float: left;
+    width: 33%;
+    height: 200px;
+    font-family: 'Courgette', cursive;
+    color: #FFF5E9;
+}
+
+#menu_inferior{
+    background-color: rgba(0,0,0,0.5);
+    text-align: left;
+
+}
+#menu_inferior ul{
+    list-style-type: none;
+    padding-left: 30%;
+    padding-top: 10%;
+
+}
+
+#menu_inferior ul li a{
+    color: #FFF5E9;
+    text-decoration: none;
+}
+
+#menu_inferior ul li a:hover{
+    color: #D47A32;
+}
+
+#direccion{
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1.3vw;
+}
+address{
+    padding-top: 12%;
+    /* padding-left: 10%; */
+}
+/* 
+#redes_sociales{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#redes_sociales ul{
+    list-style-type: none;
+    padding-left: 25%;
+    padding-top: 5%;
+    color: #FFF5E9;
+    text-align: left;
+}
+
+#redes_sociales ul li a{
+    text-decoration: none;
+
+} */
+
+#pasion{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#pasion div{
+    padding-left: 5px;
+    padding-top: 10%;
+    color: #FFF5E9;
+}
+
+#pasion p{
+    width: 80%;
+    text-align: justify;
+
+}
+
+#fila_derechos_autor{
+    float: left;
+    width: 100vw;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url('../img/textura_tela_patron.png');
+    /* background-color: #D47A32; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    color: #FFF5E9;
+    border-top: 1px solid #FFF5E9;
+    padding: 20px;
+
+}
+copyright{
+    float: left;
+    width: 50%;
+}
+author{
+    float: left;
+    width: 50%;
+}
+author a{
+    text-decoration: none;
+    color: #FFF5E9;
+}
+author a:hover{
+    color: #DC761D;
+}
+
+/*? SECCION DE REGLAS DE COLORES DE ICONOS DE REDES SOCIALES  */
+
+.color_twitter{
+    color: #1DA1F2;
+}
+.color_facebook{
+    color: #3B5998;
+}
+.color_instagram{
+    color: #C32AA3;
+}
+.color_youtube{
+    color: #FF0000;
+}
+
+
+
+
+
+
+
+/* TERMINA SECCION DE REGLAS PARA EL BLOQUE DE PIE DE PAGINA */
+
+
+
+/** REGLAS GENERALES */
+.contenedor_50_por_ciento{
+    width: 50%;
+}
+
+.titulo_color{
+    color:#DC761D;
+}
+
+.texto_50_px{
+    font-size: 50px;
+}
+
+
+/**RESPONSIVIDAD */
+
+/* ESTE MEDIA QUERIE APLICA PARA LA MAYORIA DE LOS DISPOSITIVOS MOVILES EN VERTICAL -VENTANA DE 320PX A 480PX- */
+
+@media (min-width: 320px) and (max-width: 480px){
+    #nav_sup{
+        top: -180px;
+        transition: all 0.7s ease-in-out;
+    }
+    #nav_sup:hover {
+        top: 0;
+    }
+    #nav_sup a{
+        float: none;
+        display: block;
+    }
+    
+    .logo_encabezado{
+        display: none;
+    }
+
+    #forma_nav_sup{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    #div_hero #div_hero_interior img{
+        width: 55vw;
+    }
+
+    #div_hero #div_hero_interior h1{
+        font-family: 'Courgette', cursive;
+        font-weight: 400;
+        font-size: 5.2vw;
+        width: 70%;
+        margin: auto;
+    }
+
+    .contenedor_barra_social_anclada{
+        right: -112px;
+    }
+
+    #productos_servicios {
+        height: 120vh;
+    }
+
+    #productos_servicios .bloque_producto{
+        float: left;
+        width: 50vw;
+        padding: 5%;
+    }
+
+    #productos_servicios h2{
+        font-size: 6vw;
+        font-weight: 300;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    
+    }
+
+    .fuente_logo{
+        font-size: 15vw;
+        color: #FFF5E9;
+    }
+
+    .contenedor_50_por_ciento{
+        font-size: 5vw;
+    }
+
+    .info_producto{
+        font-size: 2.5vw;
+    }
+
+    #instar_actuar{
+        height: 100vh;
+    }
+
+    .etiquetas_25pcnto, .campos_75pcnto, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    footer{
+        height: 115vh;
+        
+    }
+    #fila_texto_cierre{
+        font-size: 5vw;
+    }
+    #fila_texto_cierre p{
+        font-size: 5vw;
+        width: 70%;
+        margin: auto;
+        padding: 25px;
+    }
+    .columna_pie{
+        clear: both;
+        width: 100%;
+    }
+    #menu_inferior{
+        font-size: 5vw;
+        text-align: center;
+    }
+    #menu_inferior ul{
+        padding-left: 0;
+    }
+    #direccion{
+        font-size: 4vw;
+    }
+
+    #pasion p{
+        text-align: center;
+        font-size: 3.8vw;
+        padding-left: 18%;
+        margin-top: -14px;
+    }
+
+    #fila_derechos_autor{
+        font-size: 2.8vw;
+    }
+    copyright{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    author{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+/* ESTE MEDIA QUERIE APLICA PARA LAS TABLETS DE BAJA RESOLUCION Y DISPOSITIVOS MOVILES EN HORIZONTAL -VENTANA DE 481PX A 767PX- */
+@media (min-width: 481px) and (max-width: 767px){
+    #nav_sup{
+        top: -180px;
+        transition: all 0.7s ease-in-out;
+    }
+    #nav_sup:hover {
+        top: 0;
+    }
+    #nav_sup a{
+        float: none;
+        display: block;
+    }
+    
+    .logo_encabezado{
+        display: none;
+    }
+
+    #forma_nav_sup{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    #div_hero #div_hero_interior img{
+        width: 50vw;
+    }
+
+    #div_hero #div_hero_interior h1{
+        font-family: 'Courgette', cursive;
+        font-weight: 400;
+        font-size: 5vw;
+        width: 70%;
+        margin: auto;
+    }
+
+    .contenedor_barra_social_anclada{
+        right: -105px;
+    }
+
+    #productos_servicios {
+        height: 170vh;
+    }
+
+    #productos_servicios .bloque_producto{
+        float: left;
+        width: 50vw;
+        padding: 5%;
+    }
+
+    #productos_servicios h2{
+        font-size: 6vw;
+        font-weight: 300;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    
+    }
+
+    .fuente_logo{
+        font-size: 15vw;
+        color: #FFF5E9;
+    }
+
+    .contenedor_50_por_ciento{
+        font-size: 5vw;
+    }
+
+    .info_producto{
+        font-size: 2.5vw;
+    }
+
+    #instar_actuar{
+        height: 100vh;
+    }
+
+    .etiquetas_25pcnto, .campos_75pcnto, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    footer{
+        height: 115vh;
+        
+    }
+    #fila_texto_cierre{
+        font-size: 5vw;
+    }
+    #fila_texto_cierre p{
+        font-size: 5vw;
+        width: 70%;
+        margin: auto;
+        padding: 25px;
+    }
+    .columna_pie{
+        clear: both;
+        width: 100%;
+    }
+    #menu_inferior{
+        font-size: 4vw;
+        text-align: center;
+    }
+    #menu_inferior ul{
+        padding-left: 0;
+    }
+    #direccion{
+        font-size: 3vw;
+    }
+
+    #pasion p{
+        text-align: center;
+        font-size: 2.7vw;
+        padding-left: 18%;
+        margin-top: -14px;
+    }
+
+    #fila_derechos_autor{
+        font-size: 2.4vw;
+    }
+    copyright{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    author{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ESTE MEDIA QUERIE APLICA PARA TABLETS DE BUENA Y BAJA RESOLUCION Y DISPOSITIVOS MOBILES EN VERTICAL -VENTANA DE 768PX A 1024PX- */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    #nav_sup a{
+        font-size: 1.7vw;
+    }
+    
+    .logo_encabezado{
+        display: none;
+    }
+
+    #forma_nav_sup{
+        width: 100%;
+        float: none;
+        display: block;
+        clear: both;
+    }
+
+    #div_hero #div_hero_interior img{
+        width: 50vw;
+    }
+
+    #div_hero #div_hero_interior h1{
+        font-family: 'Courgette', cursive;
+        font-weight: 400;
+        font-size: 5vw;
+        width: 70%;
+        margin: auto;
+    }
+
+    .contenedor_barra_social_anclada{
+        right: -92px;
+    }
+
+    #productos_servicios {
+        height: 180vh;
+    }
+
+    #productos_servicios .bloque_producto{
+        float: left;
+        width: 50vw;
+        padding: 5%;
+    }
+
+    #productos_servicios h2{
+        font-size: 6vw;
+        font-weight: 300;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    
+    }
+
+    .fuente_logo{
+        font-size: 8vw;
+        color: #FFF5E9;
+    }
+
+    .contenedor_50_por_ciento{
+        font-size: 3vw;
+    }
+
+    .info_producto{
+        font-size: 2vw;
+    }
+
+    #instar_actuar{
+        height: 100vh;
+    }
+
+    .etiquetas_25pcnto, .campos_75pcnto, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    footer{
+        height: 125vh;
+        
+    }
+    #fila_texto_cierre{
+        font-size: 5vw;
+    }
+    #fila_texto_cierre p{
+        font-size: 4vw;
+        width: 70%;
+        margin: auto;
+        padding: 25px;
+    }
+    .columna_pie{
+        clear: both;
+        width: 100%;
+    }
+    #menu_inferior{
+        font-size: 2.6vw;
+        text-align: center;
+    }
+    #menu_inferior ul{
+        padding-left: 0;
+    }
+
+
+    #direccion{    
+        font-size: 2.5vw;
+    }
+
+    #pasion p{
+        text-align: center;
+        font-size: 2.2vw;
+        padding-left: 18%;
+        margin-top: -14px;
+    }
+
+    #fila_derechos_autor{
+        font-size: 1.6vw;
+    }
+    copyright{
+        margin-bottom: 10px;
+    }
+    author{
+        margin-bottom: 10px;
+    }
+
+}
+
+/* ESTE MEDIA QUERIE APLICA PARA TABLETS DE BUENA Y BAJA RESOLUCION Y DISPOSITIVOS MOBILES EN HORIZONTAL -VENTANA DE 768PX A 1024PX- */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}
+
+/* ESTE MEDIA QUERIE APLICA PARA LAPTOPS Y PC DE ESCRITORIO -VENTANA DE 1025PX A 1281PX- */
+@media (min-width: 1025px) and (max-width: 1281px){
+    #nav_sup a{
+        font-size: 1.7vw;
+    }
+    
+    .logo_encabezado{
+        display: none;
+    }
+
+    #forma_nav_sup{
+        width: 100%;
+        float: none;
+        display: block;
+        clear: both;
+    }
+
+    #div_hero #div_hero_interior img{
+        width: 25vw;
+    }
+
+    #div_hero #div_hero_interior h1{
+        font-family: 'Courgette', cursive;
+        font-weight: 400;
+        font-size: 3vw;
+        width: 70%;
+        margin: auto;
+    }
+
+    .contenedor_barra_social_anclada{
+        right: -130px;
+    }
+
+    #productos_servicios {
+        height: 180vh;
+    }
+
+    #productos_servicios .bloque_producto{
+        float: left;
+        width: 40vw;
+        padding: 5%;
+        margin-left: 50px;
+    }
+
+    #productos_servicios h2{
+        font-size: 3.5vw;
+        font-weight: 300;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    
+    }
+
+    .fuente_logo{
+        font-size: 6vw;
+        color: #FFF5E9;
+    }
+
+    .contenedor_50_por_ciento{
+        font-size: 2.5vw;
+    }
+
+    .info_producto{
+        font-size: 1.6vw;
+    }
+
+    #instar_actuar{
+        height: 100vh;
+    }
+
+    .etiquetas_25pcnto, .campos_75pcnto, input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+    footer{
+        height: 125vh;
+        
+    }
+    #fila_texto_cierre{
+        font-size: 3.5vw;
+    }
+    #fila_texto_cierre p{
+        font-size: 4vw;
+        width: 70%;
+        margin: auto;
+        padding: 25px;
+    }
+    .columna_pie{
+        clear: both;
+        width: 100%;
+    }
+    #menu_inferior{
+        font-size: 1.8vw;
+        text-align: center;
+    }
+    #menu_inferior ul{
+        padding-left: 0;
+        margin-top: -20px;
+    }
+
+    #direccion address{
+        margin-top: -70px;
+    }
+
+    #direccion{    
+        font-size: 2.5vw;
+    }
+
+    #pasion p{
+        text-align: center;
+        font-size: 1.8vw;
+        padding-left: 18%;
+        margin-top: -14px;
+    }
+
+    #fila_derechos_autor{
+        font-size: 1.3vw;
+    }
+    copyright{
+        margin-bottom: 10px;
+    }
+    author{
+        margin-bottom: 10px;
+    }
+
+}
+
+/* ESTE MEDIA QUERIE APLICA PARA PC DE ALTA RESOLUCION -VENTANA DE 1025PX A 1281PX- */
+@media (min-width: 1282px){
+
+}

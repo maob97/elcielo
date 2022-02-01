@@ -1,0 +1,17 @@
+Paleta Intensa:
+#FFCCAA
+#DC761D
+#DFE0DF
+#402E32
+
+Paleta Discreta:
+#FFCCAA
+#D47A32
+#FFF5E9
+#402E32
+
+Paleta Vecina:
+#DC761D
+#986D63
+#6F372B
+#281813
